@@ -1,0 +1,48 @@
+<head>
+<title>webathon</title>
+</head>
+<script>
+function required() 
+{
+var uid= document.forms["Form1"]["userid"].value;
+  if (uid == "") {
+    alert("registration failed");
+    return false;
+  }
+var eid= document.forms["Form1"]["emailid"].value;
+  if (eid == "") {
+    alert("registration failed");
+    return false;
+  }
+var pass= document.forms["Form1"]["password"].value;
+  if (pass == "") {
+    alert("registration failed");
+    return false;
+  }
+var phn= document.forms["Form1"]["phone"].value;
+  if (phn == "") {
+    alert("registration failed");
+    return false;
+  }
+var add= document.forms["Form1"]["address"].value;
+  if (add == "") {
+    alert("registration failed");
+    return false;
+  }
+ alert("registration success");
+}
+</script>
+<body><center>
+<h2>REGISTRATION FORM</h2>
+<form name="Form1" onsubmit="return required()">
+USER ID<input type="text" id="userid" name="userid" ><br>
+EMAIL ID<input type="text" id="emailid" name="emailid" ><br>
+PASSWORD<input type="password" id="password" name="password" ><br>
+PHONE NUMBER<input type="text" id="phone" name="phone"><br>
+ADDRESS<textarea id="address" id="address" name="address" rows="4" cols="50">
+</textarea><br>
+<input type="submit" name="submit" action="submit">
+</form></center>
+
+</body>
+<html>
